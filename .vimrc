@@ -16,7 +16,7 @@ endif
 " begin plugin enumeration
 call plug#begin()
 
-" plugz:
+" plugins:
 "    util
 Plugin 'scrooloose/nerdtree' " filesystem view
 Plugin 'majutsushi/tagbar'   " scope-ordered tags
