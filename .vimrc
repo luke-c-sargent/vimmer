@@ -14,31 +14,31 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " begin plugin enumeration
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 
 " plugins:
 "    util
-Plugin 'scrooloose/nerdtree' " filesystem view
-Plugin 'majutsushi/tagbar'   " scope-ordered tags
-Plugin 'ervandew/supertab'   " tab completion
-Plguin 'BufOnly.vim'         " something something performance?
-Plugin 'SirVer/ultisnips'    " snippets! 
+Plug 'chr4/nginx.vim'
+Plug 'scrooloose/nerdtree' " filesystem view
+Plug 'majutsushi/tagbar'   " scope-ordered tags
+Plug 'ervandew/supertab'   " tab completion
+Plug 'SirVer/ultisnips'    " snippets!
 
 "    programming support
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 " Plugin 'Townk/vim-autoclose' <- dunno about this one
 " Plugin 'vim-syntastic/syntastic' <-- cool but maybe not yet
 " maybe get fugitive too for git, cause its cool
 
 " prettification
-Plugin 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " init vim-plug
 call plug#end()
 
 " Enable Elite mode, No ARROW KEYS
 " let g:elite_mode=1 <- i am not ready for this
-set cursorlines
+set cursorline
 set t_Co=256
 set background=dark
 if (has("termguicolors"))
@@ -48,7 +48,7 @@ endif
 " Vim-Supertab Configuration
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
-# UtilSnips
+" UtilSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
